@@ -11,6 +11,13 @@
 		224DD0D227A51B3400AFFD4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0D127A51B3400AFFD4F /* ContentView.swift */; };
 		224DD0D427A51B3A00AFFD4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DD0D327A51B3A00AFFD4F /* Assets.xcassets */; };
 		224DD0D727A51B3A00AFFD4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224DD0D627A51B3A00AFFD4F /* Preview Assets.xcassets */; };
+		224DD0DF27A51B8800AFFD4F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0DD27A51B8800AFFD4F /* Model.xcdatamodeld */; };
+		224DD0E527A51D0200AFFD4F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0E427A51D0200AFFD4F /* HeaderView.swift */; };
+		224DD0E727A51F3300AFFD4F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0E627A51F3300AFFD4F /* CardView.swift */; };
+		224DD0E927A5266400AFFD4F /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0E827A5266400AFFD4F /* TodayView.swift */; };
+		224DD0EB27A5395900AFFD4F /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0EA27A5395900AFFD4F /* Actions.swift */; };
+		224DD0F027A53E0900AFFD4F /* ActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224DD0EF27A53E0900AFFD4F /* ActionViewModel.swift */; };
+		22EDC65C27A668B3007BD178 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC65B27A668B3007BD178 /* ArchiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		224DD0D127A51B3400AFFD4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		224DD0D327A51B3A00AFFD4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224DD0D627A51B3A00AFFD4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		224DD0DE27A51B8800AFFD4F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		224DD0E427A51D0200AFFD4F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		224DD0E627A51F3300AFFD4F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		224DD0E827A5266400AFFD4F /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		224DD0EA27A5395900AFFD4F /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		224DD0EF27A53E0900AFFD4F /* ActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewModel.swift; sourceTree = "<group>"; };
+		22EDC65B27A668B3007BD178 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,14 @@
 		224DD0CE27A51B3400AFFD4F /* Vita */ = {
 			isa = PBXGroup;
 			children = (
+				224DD0EE27A53DD700AFFD4F /* Model */,
 				224DD0CF27A51B3400AFFD4F /* VitaApp.swift */,
 				224DD0D127A51B3400AFFD4F /* ContentView.swift */,
+				224DD0E627A51F3300AFFD4F /* CardView.swift */,
+				224DD0E427A51D0200AFFD4F /* HeaderView.swift */,
+				22EDC65B27A668B3007BD178 /* ArchiveView.swift */,
+				224DD0E827A5266400AFFD4F /* TodayView.swift */,
+				224DD0DD27A51B8800AFFD4F /* Model.xcdatamodeld */,
 				224DD0D327A51B3A00AFFD4F /* Assets.xcassets */,
 				224DD0D527A51B3A00AFFD4F /* Preview Content */,
 			);
@@ -65,6 +85,15 @@
 				224DD0D627A51B3A00AFFD4F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		224DD0EE27A53DD700AFFD4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				224DD0EA27A5395900AFFD4F /* Actions.swift */,
+				224DD0EF27A53E0900AFFD4F /* ActionViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +167,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				224DD0D227A51B3400AFFD4F /* ContentView.swift in Sources */,
+				224DD0E527A51D0200AFFD4F /* HeaderView.swift in Sources */,
+				224DD0F027A53E0900AFFD4F /* ActionViewModel.swift in Sources */,
 				224DD0D027A51B3400AFFD4F /* VitaApp.swift in Sources */,
+				224DD0DF27A51B8800AFFD4F /* Model.xcdatamodeld in Sources */,
+				224DD0E727A51F3300AFFD4F /* CardView.swift in Sources */,
+				224DD0E927A5266400AFFD4F /* TodayView.swift in Sources */,
+				22EDC65C27A668B3007BD178 /* ArchiveView.swift in Sources */,
+				224DD0EB27A5395900AFFD4F /* Actions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +377,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		224DD0DD27A51B8800AFFD4F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				224DD0DE27A51B8800AFFD4F /* Model.xcdatamodel */,
+			);
+			currentVersion = 224DD0DE27A51B8800AFFD4F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 224DD0C427A51B3400AFFD4F /* Project object */;
 }
